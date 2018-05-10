@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83638f7a-1b41-43bb-9169-beba6db903ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betting/models.py" afterPath="$PROJECT_DIR$/betting/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/betting/views.py" afterPath="$PROJECT_DIR$/betting/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldcup/settings.py" afterPath="$PROJECT_DIR$/worldcup/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldcup/urls.py" afterPath="$PROJECT_DIR$/worldcup/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/betting/static/stylee.css" afterPath="$PROJECT_DIR$/Main/static/stylee.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/betting/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldcup/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,14 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldcup/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,6 +151,7 @@
         <option value="$PROJECT_DIR$/worldcup/settings.py" />
         <option value="$PROJECT_DIR$/worldcup/views.py" />
         <option value="$PROJECT_DIR$/worldcup/templates/base.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -183,45 +183,6 @@
             <path>
               <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
               <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="betting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="betting" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="betting" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldcup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="worldcup" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +265,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/betting/static/stylee.css">
+    <entry file="file://$PROJECT_DIR$/Main/static/stylee.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -433,10 +394,18 @@
     <entry file="file://$PROJECT_DIR$/worldcup/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

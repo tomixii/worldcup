@@ -1,0 +1,7 @@
+*.pyc
+*.xml
+*.sqlite3
+.idea/
+*.vscode
+*.jpg
+*.png
