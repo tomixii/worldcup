@@ -4,6 +4,7 @@ from worldcup.forms import *
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+import urllib.request, json
 
 
 def index(request):
@@ -42,17 +43,34 @@ def login_view(request):
             all_users = User.objects.all()
             for us in all_users:
                 us.save()
-            return render(request, 'home.html')
+            home(request)
     print("gETTI")
     return render(request, 'select_profile.html')
 
 
 def home(request):
-    return render(request, 'home.html')
+    with urllib.request.urlopen('https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json') as url:
+        data = json.loads(url.read().decode())
+    groups = data['groups']
+    teams = data['teams']
+    matches = []
+    for c, info in groups.items():
+        matches.append(info['matches'])
+    flat_matches = [item for sublist in matches for item in sublist]
+
+    context = {
+        'groups': groups,
+        'matches': flat_matches,
+        'teams': teams
+    }
+    print("asd . ", len(flat_matches))
+    return render(request, 'home.html', context)
 
 
 # @login_required(login_url='token')
 def select_profile(request):
     profiles = Profile.objects.all()
-
-    return render(request, 'select_profile.html', {'profiles': profiles})
+    context = {
+        'profiles': profiles
+    }
+    return render(request, 'select_profile.html', context)
