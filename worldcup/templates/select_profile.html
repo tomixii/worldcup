@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <ul class="profile-list middle">
+        {% for profile in profiles %}
+            <li class="list-item">
+                <form method="POST" action="/login/">
+                    {% csrf_token %}
+                    <button type="submit">
+                        <i class="fas fa-user-circle fa-9x" style="width: 100%"></i>
+                        <label class="middle">{{ profile.name }}</label>
+                        <input type='text' name='username'
+                               value="{{ profile.name }}"hidden />
+                    </button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

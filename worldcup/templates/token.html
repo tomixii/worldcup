@@ -3,7 +3,8 @@
 {% block content %}
 
 <div class="container">
-    <form class="middle" method="POST" action="/login/">
+    <img src="/static/images/logo.png">
+    <form class="middle" method="POST" action="/select_profile/">
         {% csrf_token %}
         {{form.password}}
         <br>

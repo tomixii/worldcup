@@ -21,10 +21,12 @@ from django.contrib.auth import views as auth_views
 from worldcup import views
 
 urlpatterns = [
-    url(r'^$', views.home, name='home'),
+    url(r'^$', views.token, name='token'),
+    url(r'^select_profile/$', views.select_profile, name='select_profile'),
     url(r'^login/$', views.login_view, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^index/', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^home/', views.home, name='home'),
     url(r'^', include('betting.urls')),
 ]

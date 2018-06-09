@@ -3,3 +3,28 @@
     justify-content:center;
     align-items:center;
 }
+
+.profile-list ul {
+    list-style: none;
+}
+
+.profile-list li {
+    display: inline;
+}
+
+.list-item {
+    margin-right: 10px;
+    pointer: hand;
+}
+
+body {
+  background: url("/static/images/background.jpg") no-repeat center center
+   fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Gaegu', cursive;
+  font-size:42px;
+  color: #FFF;
+}

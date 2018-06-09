@@ -35,4 +35,4 @@ class Profile(models.Model):
     points = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.user.name
+        return self.name
