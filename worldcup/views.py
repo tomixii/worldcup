@@ -28,27 +28,22 @@ def token(request):
     return render(request, 'token.html', {'form': form})
 
 
-def login_view(request):
+def login_user(request):
     if request.user.is_authenticated:
-        print("logout")
-        logout(request)
-    if request.method == 'POST':
-        print("POSTI")
-        username = request.POST['username'].replace(" ", "").replace("&",
-                                                                     "").lower()
+        username = request.POST['username'].replace(" ", "").replace("&", "").lower()
         print(username)
         user = authenticate(request, username=username, password='salasana')
         if user is not None:
+            logout(request)
             login(request, user)
             all_users = User.objects.all()
             for us in all_users:
                 us.save()
-            home(request)
-    print("gETTI")
-    return render(request, 'select_profile.html')
 
 
 def home(request):
+    if request.method == 'POST':
+        login_user(request)
     with urllib.request.urlopen('https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json') as url:
         data = json.loads(url.read().decode())
     groups = data['groups']

@@ -6,7 +6,7 @@
     <ul class="profile-list middle">
         {% for profile in profiles %}
             <li class="list-item">
-                <form method="POST" action="/login/">
+                <form method="POST" action="/home/">
                     {% csrf_token %}
                     <button type="submit">
                         <i class="fas fa-user-circle fa-9x" style="width: 100%"></i>

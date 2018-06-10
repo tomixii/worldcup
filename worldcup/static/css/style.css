@@ -17,16 +17,12 @@
 
 .profile-list li {
     display: inline;
-}
-
-.list-item {
     margin-right: 10px;
-    pointer: hand;
+    cursor: pointer;
 }
 
 body {
-  background: url("/static/images/background.jpg") no-repeat center center
-   fixed;
+  background: url("/static/images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -36,6 +32,11 @@ body {
   color: #FFF;
 }
 
+#match-list {
+    width: 100%;
+}
+
 .game-card {
-    background: white;
+    display: block;
+    width: 50%;
 }

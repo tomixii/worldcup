@@ -23,7 +23,6 @@ from worldcup import views
 urlpatterns = [
     url(r'^$', views.token, name='token'),
     url(r'^select_profile/$', views.select_profile, name='select_profile'),
-    url(r'^login/$', views.login_view, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^index/', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
