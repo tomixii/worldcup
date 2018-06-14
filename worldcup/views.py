@@ -58,7 +58,7 @@ def home(request):
         'matches': flat_matches,
         'teams': teams
     }
-    print("asd . ", len(flat_matches))
+    print("asdedededeed . ", len(flat_matches))
     return render(request, 'home.html', context)
 
 
