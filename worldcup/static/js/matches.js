@@ -14,7 +14,8 @@ var addMatches = function(groupIndex) {
         console.log(groupIndex);
         console.log(indexToChar.charAt(groupIndex));
         console.log(groups[indexToChar.charAt(groupIndex)]);
-        html += '<div class="panel panel-default">' +
+        html += '<div class="row">' +
+                '<div class="panel panel-default col-md-6 col-md-offset-3">' +
                 '<div class="panel-heading middle" style="font-size: 30px; color: red">GROUP ' + indexToChar.charAt(groupIndex).toUpperCase() + '</div>' +
                 '<ul class="list-group panel-body" style="padding: 0;">';
         groups[indexToChar.charAt(groupIndex)]['matches'].forEach( function(match, index) {
@@ -24,16 +25,21 @@ var addMatches = function(groupIndex) {
                         teams[match["home_team"] - 1]["name"] + ' - ' +
                         teams[match["away_team"] - 1]["name"] +
                     '</p>' +
-                    '<div class="middle">' +
-                    '<input class="save-points"></input>' + ' - ' +
-                    '<textarea class="save-points" rows="1" cols="2"> </textarea>' +
+                    '<div class="middle row">' +
+                    '<input id="home_'+ match.id + '" class="save-points" +
+                    'type="number"></input>' + ' - ' +
+                    '<input id="away_'+ match.id + '" class="save-points" +
+                    'type="number"></input>' +
                     '</div>' +
                 '</li>';
 
         });
         html += '</ul>' +
                 '</div>' +
-                '</div>';
+                '</div>' +
+                '</div>' +
+                '<input id="save-btn" class="btn-primary middle" +
+                'type="submit"></input>';
         matchList.append(html);
 
 
@@ -46,6 +52,16 @@ $(document).ready(function () {
         //console.log(groupIndex);
         addMatches(groupIndex);
     }
+
+    $('#save-btn').on('click', function() {
+        database = {};
+        for (var i = 1; i <= 64; i++) {
+            var home_score = $('#home_' + i).val();
+            var away_score = $('#away_' + i).val();
+            database += { i:
+            }
+        }
+    });
 
 });
 

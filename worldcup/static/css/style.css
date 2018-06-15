@@ -44,3 +44,7 @@ body {
 .carousel-control.right {
     background-image: none !important;
 }
+
+input[type=number]{
+    width: 50px;
+}
